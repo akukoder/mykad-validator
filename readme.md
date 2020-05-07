@@ -1,5 +1,7 @@
 # MyKad Validator
 
+[![Build Status](https://travis-ci.org/ppzwp/mykad-validator.svg?branch=master)](https://travis-ci.org/ppzwp/mykad-validator)
+
 Validate MyKad/MyKid number to make sure:
 
 - Valid length 
