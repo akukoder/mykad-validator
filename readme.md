@@ -17,7 +17,9 @@ One of the most annoying things when dealing with user records is when they ente
 
 You can install the package via composer:
 
-```composer require ppzwp/mykad-validator```
+```
+composer require ppzwp/mykad-validator
+```
 
 ## Usage
 
@@ -49,7 +51,9 @@ if ($validator->validate('9804AA-00-5335')) {
 
 ## Testing
 
-```composer test```
+```
+composer test
+```
 
 ## License
 
