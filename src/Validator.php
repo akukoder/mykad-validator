@@ -2,7 +2,6 @@
 
 namespace PPZWP\MyKadValidator;
 
-use DateTime;
 use PPZWP\MyKadValidator\Exceptions\InvalidCharacterException;
 use PPZWP\MyKadValidator\Exceptions\InvalidCodeException;
 use PPZWP\MyKadValidator\Exceptions\InvalidDateException;
