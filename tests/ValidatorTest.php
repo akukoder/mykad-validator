@@ -47,4 +47,9 @@ class ValidatorTest extends TestCase
 
         $this->validator->validate('801208-00-2000');
     }
+
+    public function testValidInputException()
+    {
+        $this->assertTrue($this->validator->validate('801208-06-2000'));
+    }
 }
