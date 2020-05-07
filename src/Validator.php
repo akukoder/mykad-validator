@@ -13,31 +13,64 @@ class Validator
     const inputLength = 12;
 
     /**
-     * Validate the string and return boolean result if success or throw exceptoin on errors
+     * Validate the string and return boolean result if success or throw exception on errors
      *
-     * @param $mykad    string      MyKad or MyKid number
+     * @param string    $mykad      MyKad or MyKid number
+     * @param bool      $returnException
      * @return bool
      */
-    public function validate(string $mykad) : bool
+    public function validate(string $mykad, $returnException = false) : bool
     {
         $input = $this->cleaner($mykad);
 
         if ($this->verifyLength($input) === false) {
+            if ($returnException === false) {
+                return false;
+            }
+
             throw new InvalidLengthException;
         }
 
         if ($this->verifyCharacters($input) === false) {
+            if ($returnException === false) {
+                return false;
+            }
+
             throw new InvalidCharacterException;
         }
 
         if ($this->verifyDate($input) === false) {
+            if ($returnException === false) {
+                return false;
+            }
+
             throw new InvalidDateException;
         }
 
         if ($this->verifyStateCode($input) === false) {
+            if ($returnException === false) {
+                return false;
+            }
+
             throw new InvalidCodeException;
         }
 
+        return true;
+    }
+
+    /**
+     * Check the string and return boolean result if success or false errors
+     *
+     * @param string $mykad
+     * @return bool
+     */
+    public function check(string $mykad) : bool
+    {
+        if ($this->validate($mykad) !== true) {
+            return false;
+        }
+
+        // Other exceptions, just return false
         return true;
     }
 
