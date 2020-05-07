@@ -16,14 +16,13 @@ class Validator
     /**
      * Validate the string and return boolean result if success or throw exceptoin on errors
      *
-     * @param $input    string      MyKad or MyKid number
+     * @param $mykad    string      MyKad or MyKid number
      * @return bool
      */
-    public function validate(string $input) : bool
+    public function validate(string $mykad) : bool
     {
-        $input = $this->cleaner($input);
+        $input = $this->cleaner($mykad);
 
-        // Check length, exactly 12 character
         if ($this->verifyLength($input) === false) {
             throw new InvalidLengthException;
         }
@@ -45,13 +44,13 @@ class Validator
 
     /**
      * Verify the input length
-     * 
+     *
      * @param string $input
      * @return bool
      */
     protected function verifyLength(string $input) : bool
     {
-        return strlen($input) != self::inputLength;
+        return strlen($input) === self::inputLength;
     }
 
     /**
