@@ -1,0 +1,35 @@
+{
+    "name": "ppzwp/mykad-validator",
+    "version": "1.0.0",
+    "description":  "A library for validating MyKad or MyKid format",
+    "homepage": "https://www.zakat.com.my",
+    "keywords": [
+        "mykad", "mykid", "validator"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Syahril Zulkefli",
+            "email": "syahril@zakat.com.my"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.2",
+        "phpunit/phpunit": "^9.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "PPZWP\\MyKadValidator\\": "src/",
+            "PPZWP\\MyKadValidator\\Test\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
