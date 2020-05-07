@@ -1,6 +1,5 @@
 {
     "name": "ppzwp/mykad-validator",
-    "version": "1.0.0",
     "description":  "A library for validating MyKad or MyKid format",
     "homepage": "https://www.zakat.com.my",
     "keywords": [
@@ -10,7 +9,7 @@
     "authors": [
         {
             "name": "Syahril Zulkefli",
-            "email": "syahril@zakat.com.my"
+            "email": "syahzul@gmail.com"
         }
     ],
     "require": {
