@@ -24,7 +24,7 @@ class Validator
         $input = $this->cleaner($input);
 
         // Check length, exactly 12 character
-        if (strlen($input) != self::inputLength) {
+        if ($this->verifyLength($input) === false) {
             throw new InvalidLengthException;
         }
 
@@ -41,6 +41,17 @@ class Validator
         }
 
         return true;
+    }
+
+    /**
+     * Verify the input length
+     * 
+     * @param string $input
+     * @return bool
+     */
+    protected function verifyLength(string $input) : bool
+    {
+        return strlen($input) != self::inputLength;
     }
 
     /**
