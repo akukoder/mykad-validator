@@ -4,7 +4,7 @@
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/ppzwp/mykad-validator)
 ![Packagist PHP Version Support (custom server)](https://img.shields.io/packagist/php-v/ppzwp/mykad-validator)
 ![Packagist License](https://img.shields.io/packagist/l/ppzwp/mykad-validator)
-[![Coverage Status](https://coveralls.io/repos/github/ppzwp/mykad-validator/badge.svg?branch=master)](https://coveralls.io/github/ppzwp/mykad-validator?branch=master)
+
 
 ## About MyKad
 
@@ -43,27 +43,27 @@ use PPZWP\MyKadValidator\Validator;
 
 $validator = new Validator;
 
-// This will throw false
+// This will return false
 if ($validator->validate('982404-06-5883')) {
     
 }
 
-// This will throw false
+// This will return false
 if ($validator->validate('982404-06-83')) {
     
 }
 
-// This will throw false
+// This will return false
 if ($validator->validate('980404-00-5335')) {
     
 }
 
-// This will throw false
+// This will return false
 if ($validator->validate('9804AA-00-5335')) {
     
 }
 
-// This will throw true
+// This will return true
 if ($validator->validate('980404-06-5335')) {
     
 }
@@ -75,6 +75,7 @@ if ($validator->validate('980404-06-5335')) {
 use PPZWP\MyKadValidator\Validator;
 
 $validator = new Validator;
+
 // This will throw \PPZWP\MyKadValidator\Exceptions\InvalidDateException
 if ($validator->validate('982404-06-5883', true)) {
     
