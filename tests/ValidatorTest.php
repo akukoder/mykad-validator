@@ -11,7 +11,7 @@ use PPZWP\MyKadValidator\Validator;
 
 class ValidatorTest extends TestCase
 {
-    protected Validator $validator;
+    protected $validator;
 
     protected function setUp(): void
     {
