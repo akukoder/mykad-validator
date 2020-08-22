@@ -1,7 +1,7 @@
 {
-    "name": "ppzwp/mykad-validator",
+    "name": "akukoder/mykad-validator",
     "description":  "A library for validating MyKad or MyKid format",
-    "homepage": "https://www.zakat.com.my",
+    "homepage": "https://akukoder.com",
     "keywords": [
         "mykad", "mykid", "validator"
     ],
@@ -21,8 +21,8 @@
     },
     "autoload": {
         "psr-4": {
-            "PPZWP\\MyKadValidator\\": "src/",
-            "PPZWP\\MyKadValidator\\Test\\": "tests/"
+            "AkuKoder\\MyKadValidator\\": "src/",
+            "AkuKoder\\MyKadValidator\\Test\\": "tests/"
         }
     },
     "scripts": {

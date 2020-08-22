@@ -1,11 +1,11 @@
 <?php
 
-namespace PPZWP\MyKadValidator;
+namespace AkuKoder\MyKadValidator;
 
-use PPZWP\MyKadValidator\Exceptions\InvalidCharacterException;
-use PPZWP\MyKadValidator\Exceptions\InvalidCodeException;
-use PPZWP\MyKadValidator\Exceptions\InvalidDateException;
-use PPZWP\MyKadValidator\Exceptions\InvalidLengthException;
+use AkuKoder\MyKadValidator\Exceptions\InvalidCharacterException;
+use AkuKoder\MyKadValidator\Exceptions\InvalidCodeException;
+use AkuKoder\MyKadValidator\Exceptions\InvalidDateException;
+use AkuKoder\MyKadValidator\Exceptions\InvalidLengthException;
 
 class Validator
 {

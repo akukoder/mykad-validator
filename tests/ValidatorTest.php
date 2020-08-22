@@ -1,13 +1,13 @@
 <?php
 
-namespace PPZWP\MyKadValidator\Test;
+namespace AkuKoder\MyKadValidator\Test;
 
 use Orchestra\Testbench\TestCase;
-use PPZWP\MyKadValidator\Exceptions\InvalidCharacterException;
-use PPZWP\MyKadValidator\Exceptions\InvalidCodeException;
-use PPZWP\MyKadValidator\Exceptions\InvalidDateException;
-use PPZWP\MyKadValidator\Exceptions\InvalidLengthException;
-use PPZWP\MyKadValidator\Validator;
+use AkuKoder\MyKadValidator\Exceptions\InvalidCharacterException;
+use AkuKoder\MyKadValidator\Exceptions\InvalidCodeException;
+use AkuKoder\MyKadValidator\Exceptions\InvalidDateException;
+use AkuKoder\MyKadValidator\Exceptions\InvalidLengthException;
+use AkuKoder\MyKadValidator\Validator;
 
 class ValidatorTest extends TestCase
 {

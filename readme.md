@@ -1,9 +1,9 @@
 # MyKad Validator
 
-[![Build Status](https://travis-ci.org/ppzwp/mykad-validator.svg?branch=master)](https://travis-ci.org/ppzwp/mykad-validator)
-![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/ppzwp/mykad-validator)
-![Packagist PHP Version Support (custom server)](https://img.shields.io/packagist/php-v/ppzwp/mykad-validator)
-![Packagist License](https://img.shields.io/packagist/l/ppzwp/mykad-validator)
+[![Build Status](https://travis-ci.org/akukoder/mykad-validator.svg?branch=master)](https://travis-ci.org/akukoder/mykad-validator)
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/akukoder/mykad-validator)
+![Packagist PHP Version Support (custom server)](https://img.shields.io/packagist/php-v/akukoder/mykad-validator)
+![Packagist License](https://img.shields.io/packagist/l/akukoder/mykad-validator)
 
 
 ## About MyKad
@@ -33,13 +33,13 @@ Any other unnecessary characters from the input will be removed, including dashe
 You can install the package via composer:
 
 ```
-composer require ppzwp/mykad-validator
+composer require akukoder/mykad-validator
 ```
 
 ## Usage
 
 ```php
-use PPZWP\MyKadValidator\Validator;
+use AkuKoder\MyKadValidator\Validator;
 
 $validator = new Validator;
 
@@ -72,26 +72,26 @@ if ($validator->validate('980404-06-5335')) {
 ### Get exception on errors
 
 ```php
-use PPZWP\MyKadValidator\Validator;
+use AkuKoder\MyKadValidator\Validator;
 
 $validator = new Validator;
 
-// This will throw \PPZWP\MyKadValidator\Exceptions\InvalidDateException
+// This will throw \akukoder\MyKadValidator\Exceptions\InvalidDateException
 if ($validator->validate('982404-06-5883', true)) {
     
 }
 
-// This will throw \PPZWP\MyKadValidator\Exceptions\InvalidLengthException
+// This will throw \akukoder\MyKadValidator\Exceptions\InvalidLengthException
 if ($validator->validate('982404-06-83', true)) {
     
 }
 
-// This will throw \PPZWP\MyKadValidator\Exceptions\InvalidCodeException
+// This will throw \akukoder\MyKadValidator\Exceptions\InvalidCodeException
 if ($validator->validate('980404-00-5335', true)) {
     
 }
 
-// This will throw \PPZWP\MyKadValidator\Exceptions\InvalidCharacterException
+// This will throw \akukoder\MyKadValidator\Exceptions\InvalidCharacterException
 if ($validator->validate('9804AA-00-5335', true)) {
     
 }
