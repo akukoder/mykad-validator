@@ -1,6 +1,6 @@
 <?php
 
-namespace PPZWP\MyKadValidator\Exceptions;
+namespace AkuKoder\MyKadValidator\Exceptions;
 
 class InvalidCodeException extends \InvalidArgumentException
 {
