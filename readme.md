@@ -76,22 +76,22 @@ use AkuKoder\MyKadValidator\Validator;
 
 $validator = new Validator;
 
-// This will throw \akukoder\MyKadValidator\Exceptions\InvalidDateException
+// This will throw \AkuKoder\MyKadValidator\Exceptions\InvalidDateException
 if ($validator->validate('982404-06-5883', true)) {
     
 }
 
-// This will throw \akukoder\MyKadValidator\Exceptions\InvalidLengthException
+// This will throw \AkuKoder\MyKadValidator\Exceptions\InvalidLengthException
 if ($validator->validate('982404-06-83', true)) {
     
 }
 
-// This will throw \akukoder\MyKadValidator\Exceptions\InvalidCodeException
+// This will throw \AkuKoder\MyKadValidator\Exceptions\InvalidCodeException
 if ($validator->validate('980404-00-5335', true)) {
     
 }
 
-// This will throw \akukoder\MyKadValidator\Exceptions\InvalidCharacterException
+// This will throw \AkuKoder\MyKadValidator\Exceptions\InvalidCharacterException
 if ($validator->validate('9804AA-00-5335', true)) {
     
 }
